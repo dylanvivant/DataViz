@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Données générées
+data/cleaned/
+data/enriched/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Dash
+*.pyc
+
+# Docker
+.env
+
+# Models (optionnel - décommentez si vous ne voulez pas versionner les modèles)
+# models/*.pkl

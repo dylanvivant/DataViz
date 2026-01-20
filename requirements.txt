@@ -1,0 +1,34 @@
+# Framework Dash (inclut plotly, dash-core-components, dash-html-components, dash-table)
+dash==2.18.2
+
+# Composants Bootstrap pour Dash
+dash-bootstrap-components==1.6.0
+
+# Manipulation de données
+pandas==2.2.3
+numpy==1.26.4
+
+# Pour les callbacks avec l'état
+dash-extensions==1.0.17
+
+# Serveur web (pour déploiement)
+gunicorn==23.0.0
+
+# Utilitaires
+python-dotenv==1.0.1
+
+# Machine Learning & Clustering
+scikit-learn==1.5.2
+scipy==1.14.1
+joblib==1.4.2
+
+# Visualisation
+matplotlib==3.9.2
+seaborn==0.13.2
+
+# Machine Learning - Stats
+statsmodels==0.14.2
+
+# Jupyter Notebook support
+nbformat>=4.2.0
+ipykernel>=6.0.0

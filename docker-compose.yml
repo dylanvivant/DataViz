@@ -1,0 +1,38 @@
+services:
+  # Service principal pour le dashboard Dash
+  dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: northwind-dashboard
+    ports:
+      - "8050:8050"
+    volumes:
+      # Monter les données pour permettre les mises à jour sans rebuild
+      - ./data:/app/data
+      # Monter les modèles ML
+      - ./models:/app/models
+      # Monter le schéma
+      - ./schema:/app/schema
+    environment:
+      - PYTHONUNBUFFERED=1
+      - DASH_DEBUG=False
+    restart: unless-stopped
+    networks:
+      - northwind-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8050"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+networks:
+  northwind-network:
+    driver: bridge
+
+volumes:
+  # Volumes pour persister les données
+  data:
+  models:
+  schema:

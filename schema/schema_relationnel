@@ -1,0 +1,53 @@
+// Schéma Relationnel Northwind
+digraph Northwind_Schema {
+	bgcolor="#f8f9fa" fontname=Arial rankdir=LR
+	node [fontname=Arial shape=plaintext]
+	edge [color="#495057" fontname=Arial fontsize=10]
+	customers [label=<
+    <TABLE BORDER="2" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#e7f3ff">
+        <TR><TD COLSPAN="2" BGCOLOR="#0d6efd"><FONT COLOR="white"><B>CUSTOMERS</B></FONT></TD></TR>
+        <TR><TD ALIGN="LEFT"><U>customerID</U></TD><TD ALIGN="LEFT">PK</TD></TR>
+        <TR><TD ALIGN="LEFT">companyName</TD><TD ALIGN="LEFT">VARCHAR</TD></TR>
+        <TR><TD ALIGN="LEFT">contactName</TD><TD ALIGN="LEFT">VARCHAR</TD></TR>
+        <TR><TD ALIGN="LEFT">country</TD><TD ALIGN="LEFT">VARCHAR</TD></TR>
+        <TR><TD ALIGN="LEFT">city</TD><TD ALIGN="LEFT">VARCHAR</TD></TR>
+    </TABLE>>]
+	orders [label=<
+    <TABLE BORDER="2" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#fff3cd">
+        <TR><TD COLSPAN="2" BGCOLOR="#ffc107"><FONT COLOR="black"><B>ORDERS</B></FONT></TD></TR>
+        <TR><TD ALIGN="LEFT"><U>orderID</U></TD><TD ALIGN="LEFT">PK</TD></TR>
+        <TR><TD ALIGN="LEFT"><I>customerID</I></TD><TD ALIGN="LEFT">FK</TD></TR>
+        <TR><TD ALIGN="LEFT">employeeID</TD><TD ALIGN="LEFT">INT</TD></TR>
+        <TR><TD ALIGN="LEFT">orderDate</TD><TD ALIGN="LEFT">DATE</TD></TR>
+        <TR><TD ALIGN="LEFT">shipCountry</TD><TD ALIGN="LEFT">VARCHAR</TD></TR>
+    </TABLE>>]
+	order_details [label=<
+    <TABLE BORDER="2" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#d1e7dd">
+        <TR><TD COLSPAN="2" BGCOLOR="#198754"><FONT COLOR="white"><B>ORDER_DETAILS</B></FONT></TD></TR>
+        <TR><TD ALIGN="LEFT"><I>orderID</I></TD><TD ALIGN="LEFT">FK</TD></TR>
+        <TR><TD ALIGN="LEFT"><I>productID</I></TD><TD ALIGN="LEFT">FK</TD></TR>
+        <TR><TD ALIGN="LEFT">unitPrice</TD><TD ALIGN="LEFT">DECIMAL</TD></TR>
+        <TR><TD ALIGN="LEFT">quantity</TD><TD ALIGN="LEFT">INT</TD></TR>
+        <TR><TD ALIGN="LEFT">discount</TD><TD ALIGN="LEFT">DECIMAL</TD></TR>
+    </TABLE>>]
+	products [label=<
+    <TABLE BORDER="2" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#f8d7da">
+        <TR><TD COLSPAN="2" BGCOLOR="#dc3545"><FONT COLOR="white"><B>PRODUCTS</B></FONT></TD></TR>
+        <TR><TD ALIGN="LEFT"><U>productID</U></TD><TD ALIGN="LEFT">PK</TD></TR>
+        <TR><TD ALIGN="LEFT">productName</TD><TD ALIGN="LEFT">VARCHAR</TD></TR>
+        <TR><TD ALIGN="LEFT"><I>categoryID</I></TD><TD ALIGN="LEFT">FK</TD></TR>
+        <TR><TD ALIGN="LEFT">unitPrice</TD><TD ALIGN="LEFT">DECIMAL</TD></TR>
+        <TR><TD ALIGN="LEFT">unitsInStock</TD><TD ALIGN="LEFT">INT</TD></TR>
+    </TABLE>>]
+	categories [label=<
+    <TABLE BORDER="2" CELLBORDER="1" CELLSPACING="0" CELLPADDING="4" BGCOLOR="#e2d9f3">
+        <TR><TD COLSPAN="2" BGCOLOR="#6f42c1"><FONT COLOR="white"><B>CATEGORIES</B></FONT></TD></TR>
+        <TR><TD ALIGN="LEFT"><U>categoryID</U></TD><TD ALIGN="LEFT">PK</TD></TR>
+        <TR><TD ALIGN="LEFT">categoryName</TD><TD ALIGN="LEFT">VARCHAR</TD></TR>
+        <TR><TD ALIGN="LEFT">description</TD><TD ALIGN="LEFT">TEXT</TD></TR>
+    </TABLE>>]
+	customers -> orders [label="1:N" color="#0d6efd" fontcolor="#0d6efd" fontsize=12 penwidth=2]
+	orders -> order_details [label="1:N" color="#ffc107" fontcolor="#ffc107" fontsize=12 penwidth=2]
+	products -> order_details [label="1:N" color="#dc3545" fontcolor="#dc3545" fontsize=12 penwidth=2]
+	categories -> products [label="1:N" color="#6f42c1" fontcolor="#6f42c1" fontsize=12 penwidth=2]
+}

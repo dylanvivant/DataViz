@@ -1,0 +1,57 @@
+
+╔══════════════════════════════════════════════════════════════════════════╗
+║              SCHÉMA RELATIONNEL - BASE DE DONNÉES NORTHWIND              ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
+┌─────────────────────┐
+│     CUSTOMERS       │
+├─────────────────────┤
+│ • customerID (PK)   │
+│   companyName       │
+│   contactName       │
+│   country           │
+│   city              │
+└──────────┬──────────┘
+           │ 1:N
+           ▼
+┌─────────────────────┐
+│       ORDERS        │
+├─────────────────────┤
+│ • orderID (PK)      │
+│   customerID (FK) ──┘
+│   employeeID        │
+│   orderDate         │
+│   shipCountry       │
+└──────────┬──────────┘
+           │ 1:N
+           ▼
+┌─────────────────────┐         ┌─────────────────────┐
+│   ORDER_DETAILS     │    N:1  │      PRODUCTS       │
+├─────────────────────┤◄────────┤─────────────────────┤
+│   orderID (FK)      │         │ • productID (PK)    │
+│   productID (FK)    │─────────┤   productName       │
+│   unitPrice         │         │   categoryID (FK) ──┐
+│   quantity          │         │   unitPrice         │
+│   discount          │         │   unitsInStock      │
+└─────────────────────┘         └─────────────────────┘
+                                            │ N:1
+                                            ▼
+                                ┌─────────────────────┐
+                                │     CATEGORIES      │
+                                ├─────────────────────┤
+                                │ • categoryID (PK)   │
+                                │   categoryName      │
+                                │   description       │
+                                └─────────────────────┘
+
+LÉGENDE :
+  • PK = Clé Primaire (Primary Key)
+  • FK = Clé Étrangère (Foreign Key)
+  • 1:N = Relation Un à Plusieurs
+  • N:1 = Relation Plusieurs à Un
+
+RELATIONS :
+  1. Un CLIENT peut avoir PLUSIEURS COMMANDES
+  2. Une COMMANDE peut avoir PLUSIEURS LIGNES DE DÉTAILS
+  3. Un PRODUIT peut être dans PLUSIEURS LIGNES DE DÉTAILS
+  4. Une CATÉGORIE contient PLUSIEURS PRODUITS
