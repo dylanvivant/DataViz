@@ -18,10 +18,6 @@ ENV/
 *.swo
 *~
 
-# Données générées
-data/cleaned/
-data/enriched/
-
 # Logs
 *.log
 

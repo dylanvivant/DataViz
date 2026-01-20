@@ -1,0 +1,90 @@
+customerID,recency,frequency,monetary,companyName,country,R_score,F_score,M_score,RFM_score,RFM_total,segment
+ALFKI,27,6,4273.0,Alfreds Futterkiste,Germany,2,2,2,222,6,Potential
+ANATR,63,4,1402.95,Ana Trujillo Emparedados y helados,Mexico,1,1,1,111,3,Lost
+ANTON,98,7,7023.9775,Antonio Moreno Taquería,Mexico,1,2,2,122,5,At Risk
+AROUT,26,13,13390.65,Around the Horn,UK,2,4,3,243,9,Loyal
+BERGS,63,18,24927.5775,Berglunds snabbköp,Sweden,1,4,4,144,9,Loyal
+BLAUS,7,7,3239.8,Blauer See Delikatessen,Germany,4,2,1,421,7,Potential
+BLONP,114,11,18534.08,Blondesddsl père et fils,France,1,3,4,134,8,Loyal
+BOLID,43,3,4232.85,Bólido Comidas preparadas,Spain,2,1,2,212,5,At Risk
+BONAP,0,17,21963.2525,Bon app',France,4,4,4,444,12,Champions
+BOTTM,12,14,20801.6,Bottom-Dollar Markets,Canada,3,4,4,344,11,Champions
+BSBEV,22,10,6089.9,B's Beverages,UK,3,3,2,332,8,Loyal
+CACTU,8,6,1814.8,Cactus Comidas para llevar,Argentina,4,2,1,421,7,Potential
+CENTC,657,1,100.8,Centro comercial Moctezuma,Mexico,1,1,1,111,3,Lost
+CHOPS,14,8,12348.880000000001,Chop-suey Chinese,Switzerland,3,2,3,323,8,Loyal
+COMMI,14,5,3810.75,Comércio Mineiro,Brazil,3,1,2,312,6,Potential
+CONSH,103,3,1719.1,Consolidated Holdings,UK,1,1,1,111,3,Lost
+DRACD,2,6,3763.21,Drachenblut Delikatessen,Germany,4,2,2,422,8,Loyal
+DUMON,79,4,1615.8999999999999,Du monde entier,France,1,1,1,111,3,Lost
+EASTC,8,8,14761.035,Eastern Connection,UK,4,2,3,423,9,Loyal
+ERNSH,1,30,104874.9785,Ernst Handel,Austria,4,4,4,444,12,Champions
+FAMIA,187,7,4107.55,Familia Arquibaldo,Brazil,1,2,2,122,5,At Risk
+FOLIG,135,5,11666.9,Folies gourmandes,France,1,1,3,113,5,At Risk
+FOLKO,9,19,29567.5625,Folk och fä HB,Sweden,3,4,4,344,11,Champions
+FRANK,27,15,26656.5595,Frankenversand,Germany,2,4,4,244,10,Champions
+FRANR,43,3,3172.1600000000003,France restauration,France,2,1,1,211,4,At Risk
+FRANS,6,6,1545.7,Franchi S.p.A.,Italy,4,2,1,421,7,Potential
+FURIB,48,8,6427.4225,Furia Bacalhau e Frutos do Mar,Portugal,2,2,2,222,6,Potential
+GALED,62,5,836.7,Galería del gastrónomo,Spain,1,1,1,111,3,Lost
+GODOS,15,10,11446.36,Godos Cocina Típica,Spain,3,3,3,333,9,Loyal
+GOURL,12,9,8414.135,Gourmet Lanchonetes,Brazil,3,3,3,333,9,Loyal
+GREAL,6,11,18507.45,Great Lakes Food Market,USA,4,3,4,434,11,Champions
+GROSR,139,2,1488.7,GROSELLA-Restaurante,Venezuela,1,1,1,111,3,Lost
+HANAR,9,14,32841.37,Hanari Carnes,Brazil,3,4,4,344,11,Champions
+HILAA,8,18,22768.764,HILARION-Abastos,Venezuela,4,4,4,444,12,Champions
+HUNGC,240,5,3063.2,Hungry Coyote Import Store,USA,1,1,1,111,3,Lost
+HUNGO,6,19,49979.905,Hungry Owl All-Night Grocers,Ireland,4,4,4,444,12,Champions
+ISLAT,61,10,6146.3,Island Trading,UK,1,3,2,132,6,Potential
+KOENE,20,14,30908.384000000002,Königlich Essen,Germany,3,4,4,344,11,Champions
+LACOR,43,4,1992.05,La corne d'abondance,France,2,1,1,211,4,At Risk
+LAMAI,9,14,9328.2,La maison d'Asie,France,3,4,3,343,10,Champions
+LAUGB,125,3,522.5,Laughing Bacchus Wine Cellars,Canada,1,1,1,111,3,Lost
+LAZYK,349,2,357.0,Lazy K Kountry Store,USA,1,1,1,111,3,Lost
+LEHMS,1,15,19261.41,Lehmanns Marktstand,Germany,4,4,4,444,12,Champions
+LETSS,83,4,3076.4725,Let's Stop N Shop,USA,1,1,1,111,3,Lost
+LILAS,1,14,16076.6,LILA-Supermercado,Venezuela,4,4,3,443,11,Champions
+LINOD,15,12,16476.565,LINO-Delicateses,Venezuela,3,3,3,333,9,Loyal
+LONEP,23,8,4258.6,Lonesome Pine Restaurant,USA,3,2,2,322,7,Potential
+MAGAA,51,10,7176.215,Magazzini Alimentari Riuniti,Italy,2,3,3,233,8,Loyal
+MAISD,29,7,9736.075,Maison Dewey,Belgium,2,2,3,223,7,Potential
+MEREP,188,13,28872.190000000002,Mère Paillarde,Canada,1,4,4,144,9,Loyal
+MORGK,55,5,5042.2,Morgenstern Gesundkost,Germany,2,1,2,212,5,At Risk
+NORTS,7,3,649.0,North/South,UK,4,1,1,411,6,Potential
+OCEAN,37,5,3460.2,Océano Atlántico Ltda.,Argentina,2,1,2,212,5,At Risk
+OLDWO,16,10,15177.4625,Old World Delicatessen,USA,3,3,3,333,9,Loyal
+OTTIK,22,10,12496.2,Ottilies Käseladen,Germany,3,3,3,333,9,Loyal
+PERIC,1,6,4242.2,Pericles Comidas clásicas,Mexico,4,2,2,422,8,Loyal
+PICCO,9,10,23128.86,Piccolo und mehr,Austria,3,3,4,334,10,Champions
+PRINI,28,5,5044.9400000000005,Princesa Isabel Vinhos,Portugal,2,1,2,212,5,At Risk
+QUEDE,36,9,6664.81,Que Delícia,Brazil,2,3,2,232,7,Potential
+QUEEN,2,13,25717.4975,Queen Cozinha,Brazil,4,4,4,444,12,Champions
+QUICK,22,28,110277.30500000001,QUICK-Stop,Germany,3,4,4,344,11,Champions
+RANCH,23,5,2844.1,Rancho grande,Argentina,3,2,1,321,6,Potential
+RATTC,0,18,51097.8005,Rattlesnake Canyon Grocery,USA,4,4,4,444,12,Champions
+REGGC,6,12,7048.24,Reggiani Caseifici,Italy,4,3,2,432,9,Loyal
+RICAR,7,11,12450.8,Ricardo Adocicados,Brazil,4,3,3,433,10,Champions
+RICSU,0,10,19343.779000000002,Richter Supermarkt,Switzerland,4,3,4,434,11,Champions
+ROMEY,27,5,1467.29,Romero y tomillo,Spain,2,2,1,221,5,At Risk
+SANTG,26,6,5735.150000000001,Santé Gourmet,Norway,2,2,2,222,6,Potential
+SAVEA,5,31,104361.95,Save-a-lot Markets,USA,4,4,4,444,12,Champions
+SEVES,91,9,16215.325,Seven Seas Imports,UK,1,3,3,133,7,Potential
+SIMOB,0,7,16817.0975,Simons bistro,Denmark,4,2,3,423,9,Loyal
+SPECD,14,4,2423.35,Spécialités du monde,France,3,1,1,311,5,At Risk
+SPLIR,42,9,11441.63,Split Rail Beer & Ale,USA,2,3,3,233,8,Loyal
+SUPRD,15,12,24088.78,Suprêmes délices,Belgium,3,4,4,344,11,Champions
+THEBI,35,4,3361.0,The Big Cheese,USA,2,1,2,212,5,At Risk
+THECR,30,3,1947.24,The Cracker Box,USA,2,1,1,211,4,At Risk
+TOMSP,44,6,4778.14,Toms Spezialitäten,Germany,2,2,2,222,6,Potential
+TORTU,2,10,10812.15,Tortuga Restaurante,Mexico,4,3,3,433,10,Champions
+TRADH,107,6,6850.664,Tradição Hipermercados,Brazil,1,2,2,122,5,At Risk
+TRAIH,118,3,1571.2,Trail's Head Gourmet Provisioners,USA,1,1,1,111,3,Lost
+VAFFE,34,11,15843.925,Vaffeljernet,Denmark,2,3,3,233,8,Loyal
+VICTE,103,10,9182.43,Victuailles en stock,France,1,3,3,133,7,Potential
+VINET,175,5,1480.0,Vins et alcools Chevalier,France,1,2,1,121,4,At Risk
+WANDK,13,10,9588.425,Die Wandernde Kuh,Germany,3,3,3,333,9,Loyal
+WARTH,21,15,15648.7025,Wartian Herkku,Finland,3,4,3,343,10,Champions
+WELLI,58,9,6068.2,Wellington Importadora,Brazil,2,3,2,232,7,Potential
+WHITC,5,14,27363.605,White Clover Markets,USA,4,4,4,444,12,Champions
+WILMK,29,7,3161.35,Wilman Kala,Finland,2,2,1,221,5,At Risk
+WOLZA,13,7,3531.95,Wolski  Zajazd,Poland,3,2,2,322,7,Potential
